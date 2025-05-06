@@ -1,99 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: rgb(0, 0, 0);
-  }
-  
-  header, footer {
-    background-color: #000000;
-    padding: 20px;
-  }
-  
-  section {
-    padding: 20px;
-  }
-  
-  h1 {
-    margin: 0;
-  }
-  
-  h2 {
-    margin-top: 30px;
-    color: #17b36d;
-
-  }
-  
-  ul {
-    list-style-type: disc;
-    padding-left: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
+  color: #333;
 }
 
-ul a { /* corrected a selector */
-    color: #3d0cb0;
-    text-decoration: none;
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.static-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links li {
+  margin-left: 20px;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  bottom: -3px;
+  left: 0;
+  transition: 0.3s ease;
+}
+.nav-links li a:hover::after {
+  width: 100%;
 }
 
-ul a:hover { /* corrected hover state */
-    color: #db1717;
-
+/* Hero */
+.hero {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
   }
-  
-  footer p {
-    margin: 0;
-  }
-  a{
-      text-decoration: none; 
-      
-    }
-    a:hover
-    {
-      color:#db1717;
-    
-    }
-    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: rgb(0, 0, 0);
-}
-
-header, footer {
-    background-color: #000000;
-    padding: 20px;
-}
-
+/* Sections */
 section {
-    padding: 20px;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto ;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.3s;
+  background-color: #c9c89e;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-h1 {
-    margin: 0;
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding-left: 0;
+}
+.skills-list li {
+  background: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+.skills-list li:hover {
+  transform: scale(1.1);
 }
 
-h2 {
-    margin-top: 30px;
-    color: rgb(61, 12, 176); /* corrected color code */
+/* Project and Experience Cards */
+.project-card, .experience-card {
+  background: #e8e8e8;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.project-card:hover, .experience-card:hover {
+  transform: translateY(-5px);
 }
 
-ul {
-    list-style-type: disc;
-    padding-left: 30px;
+/* Contact Section */
+.contact-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.contact-column {
+  flex: 1;
+  min-width: 200px;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+.contact-column h3 {
+  margin-bottom: 1rem;
 }
 
-ul a { /* corrected a selector */
-    color: rgb(61, 12, 176);
-    text-decoration: none;
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+footer a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 
-ul a:hover { /* corrected hover state */
-    color: #db1717;
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-footer pa {
-    color: #ffffff;
-}
-
-footer p a:hover {
-    color: #db1717;
+@keyframes slideDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
