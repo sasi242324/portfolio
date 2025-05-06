@@ -140,6 +140,22 @@
     <p>&copy; 2025 Sasikala Lakanavarapu</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.animation = "fadeInUp 1s forwards";
+      observer.unobserve(entry.target); // animate only once
+    }
+  });
+}, {
+  threshold: 0.1,
+});
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+</script>
 </body>
 </html>
