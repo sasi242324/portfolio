@@ -1,109 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sasikala Lakanavarapu - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2, h3 {
-            margin-top: 0;
-        }
-        p {
-            line-height: 1.5;
-        }
-        .project {
-            margin-bottom: 20px;
-        }
-        .project-title {
-            font-weight: bold;
-        }
-        .skills {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills li {
-            display: inline-block;
-            margin-right: 10px;
-            background-color: #f4f4f4;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sasikala Lakanavarapu | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="resume.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Sasikala Lakanavarapu</h1>
-        <p>UI Developer | Java Programmer | Problem Solver</p>
-    </header>
-    <div class="container">
-        <section id="objective">
-            <h2><a href="">Objective</a></h2>
-            <p>To obtain a challenging position in a dynamic and innovative organization where I can use my technical and analytical skills.</p>
-        </section>
-        <section id="experience">
-            <h2><a href="">Experience</a></h2>
-            <div class="project">
-                <h3>Infosys Springboard - UI Developer Internship</h3>
-                <p><span class="project-title">Project Title:</span> Microsite Template for an Educational Institution</p>
-                <p><span class="project-title">Technologies Used:</span> Figma, HTML, CSS, JavaScript</p>
-            </div>
-            <div class="project">
-                <h2><div>Travel Booking System</div></h2>
-                <ul>
-                    <li>Developed dynamic menu-driven application in Java for a Travels and Logistics company.</li></br>
-                    <li>Enabled user registration with stringent validation for input fields.</li></br>
-                    <li>Implemented login features and account lockout mechanism.</li></br>
-                    <li>Utilized Java 8 features for date handling and pricing calculations.</li></br>
-                    <li>Ensured code quality with robust exception handling and reusable methods.</li>
-                </ul>
-            </div>
-        </section>
-        <section id="education">
-            <h2><a href="">Education</a></h2>
-            <ul>
-                <li>Sri Satya Sai Creatives E.M School  - SSC 2015-2016 (GPA: 7.8)</li></br>
-                <li>Sri Pragathi Jr College - Intermediate (M.P.C) 2017-2019 (GPA: 7.9)</li></br>
-                <li>New Modern Degree College - B.Sc. (Computer Science) 2019-2022 (GPA: 8.1)</li>
-            </ul>
-        </section>
-        <section id="skills">
-            <h2><a href="">Skills & Abilities</a></h2>
-            <ul class="skills">
-                <li><a>Java</a></li>
-                <li><a>SQL</a></li>
-                <li><a>HTML</a></li>
-                <li><a>CSS</a></li>
-                <li><a>Problem Solving</a></li>
-                <li><a>Communication Skills</a></li>
-                <li><a>Interpersonal Skills</a></li>
-                <li><a>Team Work</a></li>
-                <li><a>Presentation Skills</a></li>
-            </ul>
-        </section>
+
+  <!-- Header with Static Name and Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="static-name">Sasikala Lakanavarapu</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero 
+  <section class="hero">
+    <h2>Web Developer</h2>
+    <p>Creating responsive and user-friendly websites using modern technologies.</p>
+  </section>-->
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm Sasikala Lakanavarapu, a passionate web developer with experience in UI/UX, frontend development, and strong problem-solving skills.
+    </p>
+  </section>
+    <!-- Education -->
+  <section id="education">
+    <h><h2>Education</h2></h>
+    <ul>
+      <li><strong>B.Sc.  (2022)</strong> <br> New Modern Degree College <br/>Computer Science<br/>8.08 CGPA</li>
+      <li><strong>Intermediate (2019)</strong> <br/>Sri Pragathi Junior College<br/>MPC<br/>7.7 CGPA  </li>
+      <li><strong>SSC  (2016)</strong>  <br/>Sri Satya Sai Creatives<br/>7.8 CGPA</li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-card">
+      <h3>UI Developer Intern – Infosys</h3>
+      <p>Jan 2023 – May 2023</p>
+      <p>Designed a responsive "Microsite template for an educational institution" using Figma, ensuring
+        accessibility, modern aesthetics, and user-centered design principles.<br/><br/>
+        Developed and implemented the microsite structure using HTML and CSS, achieving crossbrowser
+        compatibility and responsive behavior across devices.<br/><br/>
+        Collaborated with mentors and peers to gather requirements and iterate on "UI/UX" designs
+        based on feedback, enhancing user satisfaction and interface clarity.<br/><br/>
+        Conducted thorough testing and debugging, reducing layout inconsistencies and improving
+        overall performance and usability of the microsite.</p>
     </div>
-    <script>
-        // Add JavaScript functionality here if needed
-    </script>
+  </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Travels Booking System</h3>
+        <p>Developed a dynamic menu-driven application in Java for a Travels and Logistics company, enhancing user
+          experience and operational efficiency.<br/><br/>
+          Enabled user registration with stringent validation for input fields, ensuring data integrity and security.<br/><br/>
+          Implemented login features and account lockout mechanism, improving system security and user
+          management.</p>
+      </div>
+    </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>💻 HTML</li>
+      <li>🎨 CSS</li>
+      <li>⚙️ JavaScript</li>
+      <li>⚛️ React.js</li>
+      <li>☕ Java</li>
+      <li>🗄️ SQL</li>
+      <li>📊 MS Office</li>
+      <li>📈 MS Excel</li>
+    </ul>
+  </section>
+
+
+
+  
+
+  
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Core Java Certification- Frontlines Edutech</li>
+      <li>💻 HTML- Great Learning.</li>
+      <li>🎨 CSS - Infosys Springboard.</li>
+      <li>⚙️ JavaScript - Infosys Springboard.</li>
+
+  
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-columns">
+      <div class="contact-column">
+        <h3>Contact Information</h3>
+        <p>Email: <a href="mailto:sasikalalakanavarapu2001@gmail.com">sasikalalakanavarapu2001<br/>@gmail.com</a></p>
+        <p>Phone: 8919370134</p>
+        <p>Location: Tadepalligudem, India</p>
+      </div>
+      <div class="contact-column">
+        <h3>Social Media</h3>
+        <p><a href="https://linkedin.com/in/sasikalalakanavarapu-863a6a25a" target="_blank">LinkedIn Profile</a></p>
+        <p><a href="https://github.com/sasi242324" target="_blank">GitHub Profile</a></p>
+       
+      </div>
+      <div class="contact-column">
+        <h3>Portfolio</h3>
+        <p><a href="https://sasi242324.github.io/portfolio/Index.html" target="_blank">View Portfolio</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sasikala Lakanavarapu</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
