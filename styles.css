@@ -95,14 +95,14 @@ section {
 }
 
 /* Project and Experience Cards */
-.project-card, .experience-card, .skills-card, .certifications-caard {
+.project-card, .experience-card, .skills-card, .certifications-card, .education-card {
   background: #e8e8e8;
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
-.project-card:hover, .experience-card:hover, .skills-card:hover, .certifications-card:hover {
+.project-card:hover, .experience-card:hover, .skills-card:hover, .certifications-card:hover, .education-card:hover {
   transform: translateY(-5px);
 }
 
