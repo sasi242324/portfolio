@@ -137,6 +137,19 @@ border-radius: 5px;
 
 
 /* Project and Experience Cards */
+
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 6em;
+    background-color: #ffffff;
+    align-items: stretch;
+    align-content: center;
+    justify-content: space-between;
+}
+
+
 .project-card, .experience-card, .skills-card, .certifications-card, .education-card {
   background: #e8e8e8;
   padding: 1rem;
@@ -147,6 +160,11 @@ border-radius: 5px;
 .project-card:hover, .experience-card:hover, .skills-card:hover, .certifications-card:hover, .education-card:hover {
   transform: translateY(-5px);
 }
+.fade-in {
+    opacity: 10; /* Set to 1 for visibility */
+    transition: opacity 10s ease-in-out;
+}
+ 
 
 /* Contact Section */
 .contact-columns {
