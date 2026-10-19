@@ -1,146 +1,534 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
- 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#faf8f3">
+  <meta name="description" content="Portfolio of a graphic designer and front-end developer creating thoughtful visual identities and interactive web experiences.">
+  <title>Sasikala | Designer & Front-End Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="navbar">
-      <div class="static-name">Sasikala Lakanavarapu</div>
-      <ul class="nav-links">
-        <li><a href="#about me">About Me</a></li>
-        <li><a href="#experience">Experience</a></li>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Go to homepage">
+        sasi<span>.</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Open navigation"
+        aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a class="nav-contact" href="#contact">Let's talk ↗</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
 
   <main>
-    <section id="about me" class="content-div">
-      <h2>About Me</h2>
-      <div class="education-card">
-        <p>Hi, i am Sasikala Lakanavarapu. I hold a Bachelor's degree in Computer Science from New Modern Degree College in 2022.<br/>
-           My journey into the tech world deepened during my internship with Infosys Springboard as a UI Developer,
-            where I gained hands-on experience in building user-friendly and responsive web applications.
-            To broaden my skill set, I have taken a self-motivated path to master key technologies such as Java, React.js, and UI/UX design for both front-end and back-end development through various online platforms, enabling me to work confidently with a solid understanding of modern web technologies and a constant desire to learn and grow.
-             I am now actively seeking an opportunity to contribute to a dynamic team in my dream company, where I can turn ideas into impactful digital experiences.</p>
+    <!-- HERO -->
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> DESIGNING WITH PURPOSE</p>
+
+        <h1>Ideas into<br>
+          <span class="serif italic">beautiful</span> experiences<span class="accent">.</span>
+        </h1>
+
+        <p class="hero-description">
+          Hi, I'm Sasikala — a creative enthusiast exploring
+          graphic design and front-end development. I turn
+          thoughtful ideas into engaging visuals and
+          user-friendly websites.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="button button-dark">Explore my work <span>↗</span></a>
+          <a href="#contact" class="text-link">Let's connect <span>↗</span></a>
+        </div>
+
+        <div class="hero-meta">
+          <span>GRAPHIC DESIGN</span>
+          <span class="meta-divider"></span>
+          <span>FRONT-END DEVELOPMENT</span>
+        </div>
       </div>
+
+      <div class="hero-art reveal" aria-label="Decorative creative portfolio artwork">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-sticker sticker-top">CREATIVE<br>THINKING ✳</div>
+
+        <div class="art-center">
+          <span class="art-small">DESIGN MEETS CODE</span>
+          <span class="art-serif">Create.</span>
+          <span class="art-serif art-outline">Explore.</span>
+          <span class="art-serif">Build.</span>
+          <span class="art-spark">✳</span>
+        </div>
+
+        <div class="art-sticker sticker-bottom">MADE WITH<br>INTENTION ♡</div>
+        <span class="floating-star star-one">✳</span>
+        <span class="floating-star star-two">✦</span>
+      </div>
+
+      <a class="scroll-note" href="#about">SCROLL TO EXPLORE ↓</a>
     </section>
 
-    <section id="experience" class="content-div">
-      <h2>Experience</h2>
-      <div class="experience-card">
-        <p>UI Developer Intern | 
-          Infosys Springboard <br/> January 2023 - May 2023 <br/>
-          
-          Designed a responsive microsite template for an educational institution using Figma, focusing on accessibility, user-centered design, and modern UI aesthetics.
-          
-          Developed and implemented the microsite using HTML and CSS, ensuring cross-browser compatibility and fully responsive behavior on mobile, tablet, and desktop devices.
-          
-          Collaborated with mentors and peers to gather requirements and iterate on UI/UX designs based on user feedback, improving clarity and engagement.
-          
-          Performed thorough testing and debugging, significantly reducing layout issues and enhancing performance and usability of the final product.</p>
+    <!-- ABOUT -->
+    <section class="section container" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Curious mind.<br><span class="serif italic">Creative approach.</span></h2>
       </div>
-    </section>
 
-    <section id="skills" class="content-div">
-      <h2>Skills</h2>
-      
-        <div class="skills-container" style="display: flex; overflow-x: auto; gap: 1rem; padding-bottom: 1rem;">
-          <div class="skill-item">
-            <div class="skill-logo"><i class="fab fa-html5"></i></div>
-            <div class="skill-info"><span>HTML</span><span>95%</span></div>
-            <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-logo"><i class="fab fa-js"></i></div>
-            <div class="skill-info"><span>JavaScript</span><span>80%</span></div>
-            <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-logo"><i class="fab fa-java"></i></div>
-            <div class="skill-info"><span>Java</span><span>75%</span></div>
-            <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
-          </div>
-          <div class="skill-item">
-              <div class="skill-logo"><i class="fab fa-css3-alt"></i></div>
-              <div class="skill-info"><span>CSS</span><span>85%</span></div>
-            <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-logo"><i class="fab fa-react"></i></div>
-            <div class="skill-info"><span>React.js</span><span>70%</span></div>
-            <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
-          </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            I hold a Bachelor's degree in Computer Science, completed
+            in 2022. My journey into the tech world deepened during
+            my UI Developer internship with Infosys Springboard.
+          </p>
+          <p>
+            I'm interested in combining visual storytelling with
+            front-end development to create websites that look
+            thoughtful, feel intuitive and work across devices.
+          </p>
+          <p>
+            I'm currently building portfolio projects that explore
+            brand identity, social media design and interactive
+            travel experiences.
+          </p>
+          <a href="#projects" class="text-link">See what I'm creating ↗</a>
+        </div>
+
+        <div class="about-note reveal">
+          <span class="note-symbol">✳</span>
+          <p class="serif">Good design is not just how it looks.</p>
+          <p class="note-subtitle">It's how it makes people feel, understand and interact.</p>
+          <span class="note-footer">MY CREATIVE PHILOSOPHY</span>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="content-div">
-        <h2>Projects</h2>
-        <div class="projects-wrapper">
-          <div class="project-tabs">
-            <button class="project-tab" onclick="showProject('travel')">Travel Booking Website</button>
-            <button class="project-tab" onclick="showProject('registration')">Registration Page</button>
-            <button class="project-tab" onclick="showProject('microsite')">Microsite Template</button>
-          </div>
-          <div class="project-details">
-            <div id="travel" class="project-info">
-              <h3>Travel Booking system</h3><br/>
-              <p>Developed a dynamic menu-driven application in Java for a Travels and Logistics company, enhancing user
-                experience and operational efficiency.
-                Enabled user registration with stringent validation for input fields, ensuring data integrity and security.
-                Implemented login features and account lockout mechanism, improving system security and user
-                management.</p>
-            </div>
-            <div id="registration" class="project-info">
-              <h3>Registration & Login Page</h3><br/>
-              <p>Built a fully responsive registration and login interface using HTML, CSS, and vanilla JavaScript.
-
-                Implemented UI form toggling with JavaScript to switch between registration and login views.
-                
-                Applied form validation and basic design principles for a user-friendly experience. <a href="https://sasi242324.github.io/Registration-Login/"> Registration page </a></p>
-            </div>
-            <div id="microsite" class="project-info">
-              <h3>Microsite Template For an Educational Institution</h3><br/>
-              <p>Developed a microsite layout for educational institutions. The site is responsive, informative, and built with HTML, CSS, and JavaScript for seamless user experience.</p>
-            </div>
-          </div>
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">WHAT I BRING</p>
+          <h2>My creative <span class="serif italic">toolkit.</span></h2>
+          <p class="section-description">
+            A mix of visual thinking, design tools and front-end skills.
+          </p>
         </div>
-      </section>
 
-    
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon design-icon" aria-hidden="true">✳</div>
+            <h3>Graphic Design</h3>
+            <p>Visual identities and digital content that communicate clearly.</p>
+            <div class="skill-tags">
+              <span>Logo Design</span>
+              <span>Brand Identity</span>
+              <span>Posters</span>
+              <span>Social Media</span>
+              <span>Typography</span>
+              <span>Layout Design</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon code-icon" aria-hidden="true">&lt;/&gt;</div>
+            <h3>Front-End Development</h3>
+            <p>Responsive interfaces with useful interactions and clean structure.</p>
+            <div class="skill-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+              <span>DOM Manipulation</span>
+              <span>Form Validation</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon ui-icon" aria-hidden="true">▧</div>
+            <h3>UI/UX Design</h3>
+            <p>Thoughtful layouts focused on clarity, accessibility and usability.</p>
+            <div class="skill-tags">
+              <span>Figma</span>
+              <span>Wireframing</span>
+              <span>Prototyping</span>
+              <span>Visual Hierarchy</span>
+              <span>Accessibility</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section container" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">SELECTED WORK & CONCEPTS</p>
+        <h2>A few things I've <span class="serif italic">imagined.</span></h2>
+        <p class="section-description">
+          Brand experiments, digital design and websites in progress.
+        </p>
+      </div>
+
+      <div class="project-filters reveal" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">All work</button>
+        <button class="filter-btn" data-filter="graphic" aria-pressed="false">Graphic design</button>
+        <button class="filter-btn" data-filter="web" aria-pressed="false">Web development</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- GRAPHIC DESIGN 1 -->
+        <article class="project-card reveal" data-category="graphic">
+          <div class="project-cover cover-coffee">
+            <span class="cover-label">BRAND IDENTITY · CONCEPT</span>
+            <div class="coffee-art">
+              <span class="coffee-top">SLOW MORNINGS CLUB</span>
+              <span class="coffee-name">mellow<span>.</span></span>
+              <span class="coffee-cup">☕</span>
+              <span class="coffee-bottom">GOOD COFFEE. GOOD DAYS.</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-number">01 / BRANDING</span>
+              <h3>Mellow Coffee Co.</h3></div>
+            <button class="project-open" data-project="coffee" aria-label="View Mellow Coffee Co. project details">↗</button>
+          </div>
+          <p class="project-description">A fictional café identity with warm colors, packaging ideas and a friendly visual style.</p>
+          <div class="project-tags"><span>Logo</span><span>Packaging</span><span>Branding</span></div>
+        </article>
+
+        <!-- GRAPHIC DESIGN 2 -->
+        <article class="project-card reveal" data-category="graphic">
+          <div class="project-cover cover-poster">
+            <span class="cover-label">EDITORIAL · CONCEPT</span>
+            <div class="poster-art">
+              <span class="poster-top">A LITTLE MORE OUTSIDE</span>
+              <span class="poster-title">TAKE<br>THE <i>SCENIC</i><br>ROUTE.</span>
+              <span class="poster-circle">GO<br>WANDER</span>
+              <span class="poster-bottom">YOUR NEXT CHAPTER STARTS HERE — 2026</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-number">02 / POSTER</span>
+              <h3>Take the Scenic Route</h3></div>
+            <button class="project-open" data-project="poster" aria-label="View travel poster project details">↗</button>
+          </div>
+          <p class="project-description">A travel-inspired poster exploring bold typography, visual hierarchy and color contrast.</p>
+          <div class="project-tags"><span>Poster</span><span>Typography</span><span>Layout</span></div>
+        </article>
+
+        <!-- GRAPHIC DESIGN 3 -->
+        <article class="project-card reveal" data-category="graphic">
+          <div class="project-cover cover-logos">
+            <span class="cover-label">LOGO COLLECTION · CONCEPT</span>
+            <div class="logo-board">
+              <div class="mini-logo logo-one"><span>m</span><small>MELLOW</small></div>
+              <div class="mini-logo logo-two"><span>✳</span><small>WILDFLOWER</small></div>
+              <div class="mini-logo logo-three"><span>◒</span><small>DAYBREAK</small></div>
+              <div class="mini-logo logo-four"><span>⌁</span><small>WAYFARER</small></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-number">03 / LOGO DESIGN</span>
+              <h3>Little Marks, Big Ideas</h3></div>
+            <button class="project-open" data-project="logos" aria-label="View logo collection details">↗</button>
+          </div>
+          <p class="project-description">Four fictional brand marks exploring symbols, wordmarks and distinct visual personalities.</p>
+          <div class="project-tags"><span>Logo Design</span><span>Identity</span></div>
+        </article>
+
+        <!-- GRAPHIC DESIGN 4 -->
+        <article class="project-card reveal" data-category="graphic">
+          <div class="project-cover cover-instagram">
+            <span class="cover-label">SOCIAL MEDIA · CONCEPT</span>
+            <div class="social-post">
+              <span class="social-brand">mellow. ☕</span>
+              <span class="social-heading">Your daily<br><i>little</i> ritual.</span>
+              <span class="social-beans">✳ &nbsp; ◉ &nbsp; ✳</span>
+              <span class="social-footer">SIP SLOW. STAY AWHILE.</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-number">04 / INSTAGRAM POST</span>
+              <h3>A Feed Worth Sipping</h3></div>
+            <button class="project-open" data-project="instapost" aria-label="View Instagram post details">↗</button>
+          </div>
+          <p class="project-description">A café social post concept designed to make a fictional brand feel warm and recognizable.</p>
+          <div class="project-tags"><span>Social Media</span><span>Branding</span></div>
+        </article>
+
+        <!-- GRAPHIC DESIGN 5 -->
+        <article class="project-card reveal" data-category="graphic">
+          <div class="project-cover cover-story">
+            <span class="cover-label">SOCIAL MEDIA · CONCEPT</span>
+            <div class="story-art">
+              <span class="story-brand">mellow. / STORY 01</span>
+              <span class="story-sun">☼</span>
+              <span class="story-heading">MONDAY<br>NEEDS A<br><i>GOOD BREW.</i></span>
+              <span class="story-cta">YOUR MOMENT OF CALM →</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-number">05 / INSTAGRAM STORY</span>
+              <h3>Stories in a Sip</h3></div>
+            <button class="project-open" data-project="instastory" aria-label="View Instagram story details">↗</button>
+          </div>
+          <p class="project-description">A vertical social story concept with a clear message, brand consistency and a call to action.</p>
+          <div class="project-tags"><span>Instagram Story</span><span>Campaign</span></div>
+        </article>
+
+        <!-- GRAPHIC DESIGN 6 -->
+        <article class="project-card reveal" data-category="graphic">
+          <div class="project-cover cover-campaign">
+            <span class="cover-label">CAMPAIGN · CONCEPT</span>
+            <div class="campaign-art">
+              <span class="campaign-kicker">YOUR WEEKEND, REIMAGINED</span>
+              <span class="campaign-title">GO<br><i>WHERE</i><br>YOU FEEL.</span>
+              <span class="campaign-route">HILLS · COAST · QUIET PLACES</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-number">06 / CAMPAIGN DESIGN</span>
+              <h3>Somewhere, Slowly</h3></div>
+            <button class="project-open" data-project="campaign" aria-label="View travel campaign details">↗</button>
+          </div>
+          <p class="project-description">A fictional travel campaign for social and print, connecting destination discovery with a relaxed mood.</p>
+          <div class="project-tags"><span>Campaign</span><span>Print & Digital</span></div>
+        </article>
+
+        <!-- WEB DEVELOPMENT 1 -->
+        <article class="project-card reveal" data-category="web">
+          <div class="project-cover cover-budget">
+            <span class="cover-label">FRONT-END · INTERACTIVE CONCEPT</span>
+            <div class="browser-mock">
+              <div class="browser-bar"><span></span><span></span><span></span><small>littleescape.travel</small></div>
+              <div class="browser-content">
+                <span class="mock-brand">little escape.</span>
+                <span class="mock-heading">Your trip.<br><i>Your budget.</i></span>
+                <span class="mock-chip">WEEKEND IN OOTY</span>
+                <div class="mock-price">₹8,000 <small>/ person</small></div>
+                <div class="mock-progress"><span></span></div>
+                <span class="mock-caption">PLAN MORE. STRESS LESS.</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-number">07 / WEB APP</span>
+              <h3>Little Escape — Budget Planner</h3></div>
+            <button class="project-open" data-project="budget" aria-label="View budget planner details">↗</button>
+          </div>
+          <p class="project-description">A travel concept for choosing a budget, trip length and travel style, with a live estimated cost breakdown.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+
+        <!-- WEB DEVELOPMENT 2 -->
+        <article class="project-card reveal" data-category="web">
+          <div class="project-cover cover-hotels">
+            <span class="cover-label">FRONT-END · UI CONCEPT</span>
+            <div class="hotel-mock">
+              <span class="hotel-brand">little escape.</span>
+              <span class="hotel-title">Stay somewhere<br><i>special.</i></span>
+              <div class="hotel-photo"><span>OOTY · THE HILLS</span></div>
+              <div class="hotel-bottom"><span>Hillview Retreat</span><strong>₹2,400/night</strong></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-number">08 / HOTEL DISCOVERY</span>
+              <h3>Stay a Little Longer</h3></div>
+            <button class="project-open" data-project="hotels" aria-label="View hotel discovery details">↗</button>
+          </div>
+          <p class="project-description">A hotel discovery interface with sample property cards, price filters and stay details. No real bookings.</p>
+          <div class="project-tags"><span>UI Design</span><span>Responsive</span><span>JavaScript</span></div>
+        </article>
+
+        <!-- WEB DEVELOPMENT 3 -->
+        <article class="project-card reveal" data-category="web">
+          <div class="project-cover cover-itinerary">
+            <span class="cover-label">FRONT-END · UI CONCEPT</span>
+            <div class="itinerary-mock">
+              <span class="itinerary-kicker">YOUR NEXT ADVENTURE</span>
+              <span class="itinerary-title">Ooty in<br><i>3 days.</i></span>
+              <div class="itinerary-stop"><b>01</b><span>Botanical Gardens<small>Morning · Explore</small></span></div>
+              <div class="itinerary-stop"><b>02</b><span>Doddabetta Peak<small>Afternoon · Views</small></span></div>
+              <div class="itinerary-stop"><b>03</b><span>Tea Estate<small>Evening · Unwind</small></span></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-number">09 / TRAVEL PLANNER</span>
+              <h3>Get There, Gently</h3></div>
+            <button class="project-open" data-project="itinerary" aria-label="View itinerary planner details">↗</button>
+          </div>
+          <p class="project-description">An itinerary concept connecting destinations, transport planning, daily activities and arrival details.</p>
+          <div class="project-tags"><span>Travel UI</span><span>JavaScript</span></div>
+        </article>
+
+        <!-- WEB DEVELOPMENT 4 -->
+        <article class="project-card reveal" data-category="web">
+          <div class="project-cover cover-registration">
+            <span class="cover-label">FRONT-END · LIVE PROJECT</span>
+            <div class="registration-mock">
+              <span class="registration-mark">s.</span>
+              <span class="registration-title">Your next<br><i>chapter.</i></span>
+              <span class="registration-copy">A simple, friendly sign-in experience.</span>
+              <span class="registration-field">Email address</span>
+              <span class="registration-field">Password　　◉</span>
+              <span class="registration-cta">Create account ↗</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-number">10 / WEB INTERFACE</span>
+              <h3>Registration & Login</h3></div>
+            <a class="project-open" href="https://sasi242324.github.io/Registration-Login/" target="_blank" rel="noopener noreferrer" aria-label="Open registration project">↗</a>
+          </div>
+          <p class="project-description">A responsive registration and login interface built with HTML, CSS and vanilla JavaScript, including view toggling and form validation.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a class="project-link" href="https://sasi242324.github.io/Registration-Login/" target="_blank" rel="noopener noreferrer">Visit live project ↗</a>
+        </article>
+
+        <!-- WEB DEVELOPMENT 5 -->
+        <article class="project-card reveal" data-category="web">
+          <div class="project-cover cover-travel-hub">
+            <span class="cover-label">FRONT-END · INTERACTIVE CONCEPT</span>
+            <div class="travel-hub">
+              <span class="hub-brand">little escape.</span>
+              <span class="hub-title">Less planning.<br><i>More living.</i></span>
+              <span class="hub-destination">YOUR NEXT STOP: OOTY ↗</span>
+              <div class="hub-tiles">
+                <span>01<small>PLAN</small></span>
+                <span>02<small>STAY</small></span>
+                <span>03<small>EXPLORE</small></span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-number">11 / WEB EXPERIENCE</span>
+              <h3>Little Escape — Travel Hub</h3></div>
+            <button class="project-open" data-project="travelhub" aria-label="View travel hub project details">↗</button>
+          </div>
+          <p class="project-description">A unified tourism website concept combining trip preferences, budget planning, hotel discovery and itinerary guidance.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI/UX</span></div>
+        </article>
+
+      </div>
+      <p class="project-count" id="project-count" aria-live="polite">Showing all 11 projects</p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">MY JOURNEY SO FAR</p>
+          <h2>Learning by <span class="serif italic">doing.</span></h2>
+        </div>
+
+        <article class="experience-entry reveal">
+          <div class="experience-date">JAN 2023 — MAY 2023</div>
+          <div class="experience-details">
+            <span class="experience-label">INTERNSHIP</span>
+            <h3>UI Developer Intern</h3>
+            <p class="company">Infosys Springboard</p>
+            <p>
+              Designed a responsive microsite template for an educational
+              institution using Figma, with a focus on accessibility,
+              user-centered design and modern UI aesthetics.
+            </p>
+            <p>
+              Developed the microsite using HTML and CSS, considered
+              cross-browser compatibility and responsive behavior, and
+              collaborated with mentors and peers to refine the interface
+              based on feedback. Tested and debugged layouts to improve
+              usability.
+            </p>
+            <div class="project-tags">
+              <span>Figma</span><span>HTML</span><span>CSS</span>
+              <span>Responsive UI</span><span>Testing</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience-entry education-entry reveal">
+          <div class="experience-date">COMPLETED 2022</div>
+          <div class="experience-details">
+            <span class="experience-label">EDUCATION</span>
+            <h3>Bachelor's Degree in Computer Science</h3>
+            <p>Degree College</p>
+            <p>
+              An academic foundation in computing that supports my
+              continued learning in web development and digital design.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container contact-section" id="contact">
+      <div class="contact-panel reveal">
+        <div class="contact-copy">
+          <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+          <h2>Let's make something<br><span class="serif italic">meaningful.</span></h2>
+          <p>Open to opportunities, creative collaborations and front-end projects.</p>
+          <a class="button button-light"
+            href="mailto:sasikalalakanavarapu2001@gmail.com">
+            Send me an email ↗
+          </a>
+        </div>
+        <div class="contact-decoration" aria-hidden="true">
+          <span class="contact-star">✳</span>
+          <span class="contact-circle"></span>
+          <span class="contact-caption">GOOD IDEAS<br>START HERE.</span>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="mailto:sasikalalakanavarapu2001@gmail.com">Email ↗</a>
+        <a href="https://linkedin.com/in/sasikalalakanavarapu-863a6a25a"
+           target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="https://github.com/sasi242324"
+           target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    
-      
-        
-        <section id="contact" >
-            <div class="contact-column">
-              <h3>Contact me</h3>
-              <p><a href="mailto:sasikalalakanavarapu2001@gmail.com">Mail<br/></a></p>
-              <p><a href="https://linkedin.com/in/sasikalalakanavarapu-863a6a25a" target="_blank">LinkedIn Profile</a></p>
-              <p><a href="https://github.com/sasi242324" target="_blank">GitHub Profile</a></p>
-        
-    <p>&copy; 2025 My Portfolio. Built with ❤️</p></div></section></footer>
-  
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home">sasi<span>.</span></a>
+      <p>Designed with curiosity & built with care.</p>
+      <p>© <span id="current-year">2026</span> · All rights reserved.</p>
+    </div>
+  </footer>
 
-  <script>
-    function showProject(id) {
-      const infos = document.querySelectorAll('.project-info');
-      infos.forEach(info => {
-        info.classList.remove('active');
-      });
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
+  <!-- Accessible project detail dialog -->
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-inner">
+      <button class="dialog-close" aria-label="Close project details">✕</button>
+      <p class="eyebrow" id="dialog-category">PROJECT DETAILS</p>
+      <h2 id="dialog-title">Project title</h2>
+      <p id="dialog-description"></p>
+      <p class="dialog-note" id="dialog-note"></p>
+      <button class="button button-dark dialog-done">Back to portfolio ↗</button>
+    </div>
+  </dialog>
+
 </body>
 </html>
